@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter Website</title>
+
+    <!-- cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style link  -->
+     <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+<body class="w-10/12 mx-auto  mb-[500px]">
+    <header>
+        <nav class="flex justify-between items-center py-5">
+            <div class="navbar">
+                  <a class="text-xl font-bold ">Hot Gadgets</a>
+                </div>
+               
+                <div class="">
+                  <button class="btn btn-primary text-white font-semibold  w-max px-5">Sign UP</button>
+                </div>
+        </nav>
+    </header>
+
+    <div class="text-center flex flex-col justify-center items-center">
+        <h2 class="font-extrabold text-5xl  py-12">Apple Iphone 13 Pro Max</h2>
+        <p  class="w-3/6 font-medium text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+        <div class="py-10">
+            <button class="btn btn-primary text-white font-bold  w-max px-8">Buy Now</button>
+          </div>
+          <img class="mb-8" src="assets/template.png" alt="">
+
+          <h2 class="font-bold text-3xl  py-8">Search Your Phone</h2>
+    </div>
+
+    <div class="text-center flex  justify-center items-center">
+        
+         
+        
+        <input id="search-box" type="text" placeholder="Search Your Phone" class="rounded-l-md rounded-r-none w-2/6 px-4 py-3 border " />
+        <button onclick="clickSearch()" id="btn-search" class="btn btn-primary px-8 rounded-l-none ">
+            Search
+        </button>
+              
+        </div>
+
+        <div id="show-card-container" class=" justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  items-center py-5">
+            <div id="spinner" class="hidden animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 justify-center border-black"></div>
+        </div>
+
+        <div class="text-center">
+            <button onclick="showHandleButton()" class="btn bg-red-500 text-white mt-10 px-5">Show All</button>
+        </div>
+
+        <div  id="modal-container">
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-lg font-bold">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+        </div>
+        
+            
+
+<script src="js/function.js"></script>
+</body>
+</html>
